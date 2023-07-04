@@ -1,6 +1,6 @@
 //This program asks the user to input the name of the South Afrucan city that they would like current information on
-//the whole program is wrapped in myFunction so that if an empty input is given the program will restart
-myFunction = () => {
+//the whole program is wrapped in incaseOfIncorrectInput so that if an empty input is given the program will restart
+incaseOfIncorrectInput = () => {
     //This is the user's input
     let userInput = prompt("Which South African city would you like current information on?")
     
@@ -93,9 +93,9 @@ myFunction = () => {
         myApiFunction()
     } else {
         alert("You did not input a city. Please try again")
-        myFunction()
+        incaseOfIncorrectInput()
     }
 }
 
-myFunction()
+incaseOfIncorrectInput()
 
